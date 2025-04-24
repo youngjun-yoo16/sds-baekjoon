@@ -17,6 +17,9 @@ def main():
         for p in itertools.permutations(link, 2):
             link_ability += board[p[0] - 1][p[1] - 1]
         min_diff = min(min_diff, abs(start_ability - link_ability))
+        if min_diff == 0:
+            break
+    
     print(min_diff)
     
 if __name__ == "__main__":
