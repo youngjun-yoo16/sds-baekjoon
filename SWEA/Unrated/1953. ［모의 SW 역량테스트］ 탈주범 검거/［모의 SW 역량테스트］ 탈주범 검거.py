@@ -4,15 +4,6 @@ T = int(input())
 
 for test_case in range(1, T + 1):
     def possible_architectures(cur_arch, d):
-        '''
-        1. 상 하 좌 우
-        2. 상 하
-        3. 좌 우
-        4, 상 우
-        5. 하 우
-        6. 하 좌
-        7. 상 좌
-        '''  
         arch_map = {(-1, 0) : {1, 2, 5, 6}, (1, 0) : {1, 2, 4, 7},
                     (0, -1) : {1, 3, 4, 5}, (0, 1) : {1, 3, 6, 7}}
 
