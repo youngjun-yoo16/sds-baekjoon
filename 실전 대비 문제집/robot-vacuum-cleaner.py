@@ -1,5 +1,3 @@
-from collections import deque
-
 def main():
     N, M = map(int, input().split())
     r, c, d = map(int, input().split())
