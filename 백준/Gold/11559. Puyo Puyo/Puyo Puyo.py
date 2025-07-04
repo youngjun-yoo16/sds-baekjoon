@@ -65,21 +65,11 @@ def main():
     while True:
         find_and_burst()
 
-        # for row in grid:
-        #     print(*row, sep='')
-        #
-        # print("---------------")
-
-        if not found:
-            break
+        if not found: break
 
         fall_down()
 
-        # for row in grid:
-        #     print(*row, sep='')
-
         count += 1
-
         found = False
 
     print(count)
